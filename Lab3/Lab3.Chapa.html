@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Labwork 3</title>
+	<script src="validate.js" defer></script>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Interactive Student Management System</h1>
+</header>
+
+<main>
+    <section class="Studenttable">
+        <h2>Students</h2>
+
+        <div class="controls">
+            <input type="text" id="searchInput" placeholder="Search by name…" autocomplete="off">
+            <select id="sortSelect">
+                <option value="">Sort: Default</option>
+                <option value="name">Sort: Name (A–Z)</option>
+                <option value="age">Sort: Age</option>
+            </select>
+        </div>
+
+        <div class="table-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Student</th>
+                        <th>Age</th>
+                        <th>Course</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody"></tbody>
+            </table>
+        </div>
+    </section>
+
+    <section class="registration-section">
+        <div class="form-header" id="formToggle">
+            <h2>Student Registration</h2>
+            <span class="toggle-icon">▾</span>
+        </div>
+        <div class="form-body" id="formBody">
+            <div class="form-grid">
+                <div class="field">
+                    <label for="inputName">Name</label>
+                    <input type="text" id="inputName" placeholder="e.g. Jane Doe">
+                    <div class="error" id="errName"></div>
+                </div>
+                <div class="field">
+                    <label for="inputAge">Age</label>
+                    <input type="number" id="inputAge" placeholder="e.g. 21" min="1" max="99">
+                    <div class="error" id="errAge"></div>
+                </div>
+                <div class="field">
+                    <label for="inputCourse">Course</label>
+                    <input type="text" id="inputCourse" placeholder="e.g. CS">
+                    <div class="error" id="errCourse"></div>
+                </div>
+            </div>
+            <div class="form-actions">
+                <button class="submit-button" id="addBtn">Submit Registration</button>
+                <button id="clearBtn">Clear</button>
+            </div>
+        </div>
+    </section>
+</main>
+</body>
+</html>

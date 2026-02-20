@@ -1,0 +1,60 @@
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 1.5rem;
+            background: #f5f5f5;
+            color: #222;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            border-bottom: 2px solid #333;
+            padding-bottom: 0.75rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        .table-wrap {
+            background: black;
+            border: 1px solid #black;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-bottom: 1.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead { background: #e8e8e8; }
+
+        th {
+            padding: 0.6rem 1rem;
+            text-align: left;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            border-bottom: 1px solid #ccc;
+        }
+
+        td {
+            padding: 0.6rem 1rem;
+            border-bottom: 1px solid white;
+            font-size: 0.93rem;
+			color: white;
+        }
+
+        tbody tr:last-child td { border-bottom: none; }
+        tbody tr:hover { background: #800808; }
+        tbody tr.new-row { background: #C04000; }
+
+        .no-results {
+            text-align: center;
+            padding: 2rem;
+            color: white;
+            font-size: 0.9rem;
+        }
